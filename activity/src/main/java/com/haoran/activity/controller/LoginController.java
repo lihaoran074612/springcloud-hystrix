@@ -28,7 +28,7 @@ public class LoginController {
      */
     @PostMapping("/timeOutActivity")
     public String timeOutActivity(@RequestBody User user) throws InterruptedException {
-        TimeUnit.SECONDS.sleep(RandomUtils.nextInt(5)+1);
+        TimeUnit.SECONDS.sleep(RandomUtils.nextInt(5)+2);
         System.out.println("首次登录，发送优惠券成功："+user.getId());
         return "succ";
     }
