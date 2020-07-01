@@ -19,7 +19,7 @@ public class RegisterUserController {
 
     @PostMapping("/firstLoginActivity")
     public String userRegistration(@RequestBody User user){
-        System.out.println("用户注册成功："+user.getId()+"  time: "+new Date());
+        System.out.println("用户注册成功："+user.getId()+" +time: "+new Date());
         return activityService.userRegistration(user) + new Date();
     }
 }
